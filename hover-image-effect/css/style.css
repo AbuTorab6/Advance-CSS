@@ -1,0 +1,121 @@
+
+
+/* zoom */
+
+.zoom .grid
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+
+    width: 60%;
+    margin: auto;
+
+    margin-top: 100px;
+}
+
+.zoom .image {
+	width: 100%;
+	overflow: hidden;
+}
+
+
+.zoom .grid .image .img
+{
+    width: 100%;
+
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+
+.zoom .grid .image:hover .img
+{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+
+
+
+
+/* shine */
+
+.shine .grid
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+
+    width: 60%;
+    margin: auto;
+
+    margin-top: 100px;
+}
+
+.shine .image {
+	width: 100%;
+	overflow: hidden;
+}
+
+
+.shine .grid .image .img
+{
+    width: 100%;
+}
+
+
+.shine .grid  .image{
+	position: relative;
+}
+
+
+
+.shine .grid .image::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	background: rgba(255,255,255,.2);
+	border-radius: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+
+.shine .grid .image:hover::before {
+	-webkit-animation: circle .75s;
+	animation: circle .75s;
+}
+@-webkit-keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+@keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}

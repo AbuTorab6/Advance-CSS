@@ -1,0 +1,49 @@
+
+
+section,body
+{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+.curve
+{
+    color: aliceblue;
+    background-color: orange;
+    text-align: center;
+    
+}
+
+.curve h1
+{
+    font-size: 100px;
+    margin-top: 0px;
+}
+
+
+/* most important  */
+.curve svg
+{
+    display: block;
+}
+
+
+
+
+
+.bottom
+{
+    color: aliceblue;
+    text-align: center;
+    color: orange;
+}
+
+.bottom h1
+{
+    font-size: 100px;
+    margin-top: 0px;
+}
+
+

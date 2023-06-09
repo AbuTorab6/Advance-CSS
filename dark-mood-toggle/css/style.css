@@ -1,0 +1,70 @@
+section
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+label
+{
+    width: 500px;
+    height: 200px;
+
+    position: relative;
+    display: block;
+    background-color: #ebebeb;
+    border-radius: 200px;
+
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px 5px 15px rgba(0,0,0,0.4);
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+label:after
+{
+    content: "";
+    width: 180px;
+    height: 180px;
+
+    position: absolute;
+
+    top:10px;
+    left:10px;
+    background-color: rgb(255, 157, 0);
+    border-radius: 180px;
+    transition: 0.3s;
+}
+
+input
+{
+    width: 0px;
+    height: 0px;
+
+    visibility: hidden;
+}
+label:active:after
+{
+width: 260px;
+}
+
+input:checked + label
+{
+    background-color: black;
+}
+input:checked + label:after
+{
+    left:490px;
+    transform: translateX(-100%);
+    background-color: #ebebeb;
+}
+
+
+
+
+
+
+.dark
+{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,54 @@
+
+section
+{
+    overflow: hidden;
+}
+.slide
+{
+    width:100vw;
+    height: 100vh;
+}
+
+.wrapper
+{
+    display: flex;
+    flex-direction: row;
+    width: 300vw;
+
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+
+.one
+{
+    background-color: aqua;
+}
+
+.two
+{
+    background-color: rgb(204, 255, 0);
+}
+
+.three
+{
+    background-color: rgb(187, 0, 255);
+}
+
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+
+    scrollbar-width: none;
+  -ms-overflow-style: none;
+  }
+
+  ::-webkit-scrollbar {
+    display:none;
+  }
+

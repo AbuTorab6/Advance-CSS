@@ -1,0 +1,48 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+section
+{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+
+    color: white;
+}
+
+.text
+{
+    font-size: 300px;
+
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    background-image: url(../pic.jpg);
+    background-size: 120%;
+
+
+    animation: jubo 20s cubic-bezier(.52,1.03,.47,-0.02) infinite;
+}
+
+@keyframes jubo {
+    0%{
+        background-position: 0% 0%;
+    }
+
+    50%{
+        background-position: 100% 100%;
+    }
+
+    100%{
+        background-position: 0% 0%;
+    }
+}
